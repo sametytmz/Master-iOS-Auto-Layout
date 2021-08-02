@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sEN-Os-nWe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Constraints_Priority" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sorcerers_stone" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-aa-WSx">
+                                <rect key="frame" x="16" y="68" width="159" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="9uW-BN-sNT"/>
+                                    <constraint firstAttribute="width" constant="159" id="thU-YF-dOy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harry Potter and the Sorcerer's Stone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krt-Bx-Uib">
+                                <rect key="frame" x="183" y="239" width="176" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkR-3H-8GQ">
+                                <rect key="frame" x="133" y="318" width="109" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vSO-f8-DiF"/>
+                                </constraints>
+                                <state key="normal" title="iBook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBookType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNO-kT-ovb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-G9-lhm">
+                                <rect key="frame" x="250" y="318" width="109" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ke3-Fh-Lhv"/>
+                                </constraints>
+                                <state key="normal" title="Kindle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBookType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOI-6X-37q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIT-lL-vNe">
+                                <rect key="frame" x="16" y="318" width="109" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RNT-40-ZUQ"/>
+                                </constraints>
+                                <state key="normal" title="PaperBack">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBookType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJg-ki-TJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="krt-Bx-Uib" firstAttribute="bottom" secondItem="3lA-aa-WSx" secondAttribute="bottom" id="2IA-Pk-SoX"/>
+                            <constraint firstItem="3lA-aa-WSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5yK-E8-Xva"/>
+                            <constraint firstItem="nkR-3H-8GQ" firstAttribute="leading" secondItem="jIT-lL-vNe" secondAttribute="trailing" constant="8" symbolic="YES" id="CEH-ll-lUy"/>
+                            <constraint firstItem="krt-Bx-Uib" firstAttribute="leading" secondItem="3lA-aa-WSx" secondAttribute="trailing" constant="8" symbolic="YES" id="L7b-0X-Jfq"/>
+                            <constraint firstItem="ekF-G9-lhm" firstAttribute="centerY" secondItem="jIT-lL-vNe" secondAttribute="centerY" id="Mm4-JL-qqS"/>
+                            <constraint firstItem="jIT-lL-vNe" firstAttribute="top" secondItem="3lA-aa-WSx" secondAttribute="bottom" constant="38" id="Nzo-V4-y5U"/>
+                            <constraint firstItem="ekF-G9-lhm" firstAttribute="leading" secondItem="jIT-lL-vNe" secondAttribute="trailing" priority="999" constant="8" symbolic="YES" id="Ue9-80-jne"/>
+                            <constraint firstItem="nkR-3H-8GQ" firstAttribute="centerY" secondItem="jIT-lL-vNe" secondAttribute="centerY" id="VgE-UU-fdY"/>
+                            <constraint firstItem="jIT-lL-vNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZdE-Cq-9kj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ekF-G9-lhm" secondAttribute="trailing" constant="16" id="cQz-1m-CgM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nkR-3H-8GQ" secondAttribute="trailing" priority="999" constant="16" id="fax-0k-KDr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jIT-lL-vNe" secondAttribute="trailing" priority="999" constant="16" id="heI-46-vfH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krt-Bx-Uib" secondAttribute="trailing" constant="16" id="m2k-at-k9h"/>
+                            <constraint firstItem="ekF-G9-lhm" firstAttribute="width" secondItem="jIT-lL-vNe" secondAttribute="width" id="mRX-5z-PEz"/>
+                            <constraint firstItem="nkR-3H-8GQ" firstAttribute="width" secondItem="jIT-lL-vNe" secondAttribute="width" id="vBp-xT-la1"/>
+                            <constraint firstItem="ekF-G9-lhm" firstAttribute="leading" secondItem="nkR-3H-8GQ" secondAttribute="trailing" constant="8" symbolic="YES" id="we3-Fy-Rwf"/>
+                            <constraint firstItem="3lA-aa-WSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="zJM-4z-gzb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Title" id="Ene-D4-9W0"/>
+                    <connections>
+                        <outlet property="iBookButton" destination="nkR-3H-8GQ" id="H3m-UE-ZFs"/>
+                        <outlet property="kindleButton" destination="ekF-G9-lhm" id="DEp-lg-0Ht"/>
+                        <outlet property="paperBackButton" destination="jIT-lL-vNe" id="1hv-H4-rrK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.60000000000002" y="175.86206896551727"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kfA-DS-H1a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sEN-Os-nWe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tMh-Sy-ELJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QHk-24-aQc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InF-UA-KK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="176"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sorcerers_stone" width="400" height="603"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
